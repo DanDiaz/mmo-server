@@ -5,7 +5,7 @@
             "label": "Build Debug",
             "type": "shell",
             "command": "g++",
-            "args": ["-std=c++23", "-g", "-Wall", "test.cpp", "-o", "dist/debug/test_debug.exe"],
+            "args": ["-std=c++23", "-g", "-Wall", "src/main.cpp", "-o", "build/mmo-server.exe"],
             "group": { "kind": "build", "isDefault": true },
             "problemMatcher": ["$gcc"]
         },
