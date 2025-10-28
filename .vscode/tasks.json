@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug",
+            "type": "shell",
+            "command": "g++",
+            "args": ["-std=c++23", "-g", "-Wall", "test.cpp", "-o", "dist/debug/test_debug.exe"],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Build Release",
+            "type": "shell",
+            "command": "g++",
+            "args": ["-std=c++23", "-O2", "-Wall", "test.cpp", "-o", "dist/release/test_release.exe"],
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        },
+    ]
+}
