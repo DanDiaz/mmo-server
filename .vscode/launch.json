@@ -10,7 +10,6 @@
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "console": "integratedTerminal",
       "MIMode": "gdb"          // or "lldb" on macOS, "cppvsdbg" on Windows
     },
     {
