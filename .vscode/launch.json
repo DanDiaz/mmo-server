@@ -1,31 +1,27 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug (Debug Build)",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/dist/debug/test_debug.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "gdb.exe",
-            "preLaunchTask": "Build Debug"
-        },
-        {
-            "name": "Debug (Release Build)",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/dist/release/test_release.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "gdb.exe",
-            "preLaunchTask": "Build Release"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug MMO Server",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/mmo-server",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal",
+      "MIMode": "gdb"          // or "lldb" on macOS, "cppvsdbg" on Windows
+    },
+    {
+      "name": "Debug Test Client",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/test-client",
+      "args": ["127.0.0.1", "5182"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb"
+    }
+  ]
 }
