@@ -4,8 +4,16 @@
     {
       "label": "Build MMOProject",
       "type": "shell",
-      "command": "./make.sh",
-      "problemMatcher": ["$gcc"]
+      "command": "bash",
+      "args": ["make.sh"],
+      "problemMatcher": ["$gcc"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
